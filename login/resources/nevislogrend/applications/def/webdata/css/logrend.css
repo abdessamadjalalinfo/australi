@@ -1,0 +1,784 @@
+/* Styles to be used with u_icon */
+.klp_icon_box {
+
+    display: inline-block;
+    border: 2px solid;
+    box-sizing: border-box;
+    height: 1.66667em;
+    width: 1.66667em;
+    margin-right: 0.666em; /* to avoid &nbsp; after this class */
+
+    font-family: "Posticon";
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 1.41176em;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+}
+
+.success_icon {
+    color: white;
+    background-color: #A4C400;
+}
+
+.success_icon:before {
+    content: "N";
+}
+
+.error_icon {
+    color: white;
+    background-color: #A51728;
+}
+
+.error_icon:before {
+    content: "G";
+}
+
+.warning_icon {
+    color: white;
+    background-color: #F49E00;
+}
+
+.warning_icon:before {
+    content: "M";
+}
+
+li.link-with-tooltip {
+    position: relative;
+    margin-bottom: 10px !important;
+}
+
+li.link-with-tooltip > a {
+    padding-right: 30px;
+}
+
+a.disabledByLogout {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Adding a space on top of equal size as of left and right */
+#os_content.u_var_noheader {
+    padding-top: 3.5em;
+}
+
+@media all and (max-width: 64em) {
+    .u_var_responsive #os_content.u_var_noheader {
+        padding-top: 2em;
+    }
+}
+
+@media all and (max-width: 41.25em) {
+    .u_var_responsive #os_content.u_var_noheader {
+        padding-top: 1em;
+    }
+}
+
+#login-light-header-container {
+    background-color: #FFCC00;
+    height: 64px;
+    white-space: nowrap;
+}
+
+#login-light-header-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#login-light-header-logo {
+    height: 100%;
+    padding-left: 24px;
+    vertical-align: middle;
+}
+
+.u_var_responsive #os_content.light-content.u_var_noheader {
+    padding: 24px;
+}
+
+.fm_formcontainer fieldset ul.bullet-list {
+    list-style-position: outside;
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.fm_formcontainer fieldset ul.bullet-list > li {
+    margin-bottom: 0px;
+}
+
+div.u_buttoncontainer.checkbox_in_buttoncontainer > li.fm_singlecheckbox, div.u_buttoncontainer.checkbox_in_buttoncontainer > li.fm_singlecheckbox > label, div.u_buttoncontainer.checkbox_in_buttoncontainer > button {
+    display: inline;
+}
+
+div.u_buttoncontainer.checkbox_in_buttoncontainer > button {
+    float: none;
+}
+
+.u_global_error.full-width, .u_global_warning.full-width, .u_global_confirmation.full-width {
+    width: 100%;
+}
+
+.u_formfooter .u_button_secondary.left-button {
+    float: left;
+    margin-left: 0;
+}
+
+.linkButton {
+    text-decoration:underline !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 0 none !important;
+    color: #806f60 !important;
+    overflow: visible !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    box-shadow: none !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    line-height: 0em !important;
+    height: 1em !important;
+    min-width: 0em !important;
+}
+
+#swissid-more-info {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/* Login box */
+.swisspost-box {
+    text-align: left;
+}
+
+.swisspost-box > div:first-child {
+    background-color: #ffcc00;
+    display: table;
+    width: 100%;
+}
+
+.swisspost-box > div:first-child > div:first-child {
+    display: table-row;
+}
+
+.swisspost-box > div:first-child > div:first-child > div:first-child {
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    padding: 8px 5px 8px 6px;
+}
+
+.swisspost-box > div:first-child > div:first-child > div:first-child > div:first-child  {
+    height: 100%;
+    background: url(https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/images/swisspost-logo.svg) no-repeat;
+}
+
+.swisspost-box > div:first-child > div:first-child > div:nth-child(2) {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "FrutigerLTW01-55Roman", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
+.swisspost-box > div:nth-child(2) {
+    background-color: #f5f1e8;
+    padding: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.bold-text {
+    font-family: "Frutiger LT W01 65 Bold", Helvetica, Arial, sans-serif;
+}
+
+.fm_formcontainer input[type=text].white-background, .fm_formcontainer input[type=email].white-background, .fm_formcontainer input[type=password].white-background, .fm_formcontainer li.fm_singlecheckbox.white-background span {
+    background: white;
+}
+
+
+.single_column_container {
+    text-align: center;
+    background-color: white;
+}
+
+.single_column_container_left {
+    text-align: left;
+}
+
+.single_column {
+    max-width: 500px;
+    width: 100%;
+    display: inline-block;
+}
+
+.single_column h1, .single_column p:not(.center-text) {
+    text-align: left;
+}
+
+/* Tabs */
+.tab_header {
+    border-color: #dfd6c5;
+    border-style: solid;
+    border-width: 1px;
+    border-left-width: 0px;
+    box-sizing: border-box;
+    color: #584125;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-family: "Frutiger LT W01 65 Bold", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 55.9844px;
+    line-height: 26px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 10.05px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10.05px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 16px;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-size-adjust: 100%;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    white-space: nowrap;
+    width: 50%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-margin-after: 10.05px;
+    -webkit-margin-before: 10.05px;
+    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0px;
+}
+
+.tab_header:first-child {
+    border-left-width: 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.tab_header:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.tab_header:hover {
+    border-bottom-color: rgb(88, 65, 37);
+    border-top-color: rgb(88, 65, 37);
+    margin-top: 10.05px;
+    outline-color: rgb(0, 0, 0);
+    outline-style: none;
+    outline-width: 0px;
+}
+
+.tab_header:not(.tab_selected):hover {
+    background: #f3efe6;
+    color: #000000;
+}
+
+.tab_container {
+    width: 100%;
+}
+
+.tab_selected {
+    position: relative;
+    background: #ffe580;
+    color: rgb(0, 0, 0);
+}
+.tab_selected:after, .tab_selected:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.tab_selected:after {
+    border-color: rgba(255, 229, 128, 0);
+    border-top-color: #ffe580;
+    border-width: 7.59px;
+    margin-left: -7.59px;
+}
+.tab_selected:before {
+    border-color: rgba(223, 214, 197, 0);
+    border-top-color: #dfd6c5;
+    border-width: 9px;
+    margin-left: -9px;
+}
+
+.tab_section_hidden {
+    display: none;
+}
+
+.spacer_twelve {
+    height: 12px;
+}
+
+.spacer_thirtytwo {
+    height: 32px;
+}
+
+.spacer_seven {
+    height: 7px;
+}
+
+.spacer_thirtyfour {
+    height: 34px;
+}
+
+.spacer_seventyseven {
+    height: 77px;
+}
+
+.spacer_ninetyeight {
+    height: 98px;
+}
+
+.margin_twelve {
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+#section_login_collapsible div.fm_formcontainer {
+    margin-bottom: 0px;
+}
+
+.modal-backdrop.show {
+    opacity: .3;
+}
+
+.bg-danger > .modal-close-button > span:before {
+    vertical-align: middle;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: '';
+    height: 16px;
+    width: 16px;
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/cross.svg");
+    background-size: 90%;
+    border-color: #fff;
+}
+
+.modal-close-button > span:before {
+    vertical-align: middle;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: '';
+    height: 16px;
+    width: 16px;
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/darkcross.svg");
+    background-size: 90%;
+    border-color: #fff;
+}
+
+.modal-close-button {
+    position: relative;
+    right: -24px;
+    top: -8px;
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+    color: inherit;
+    text-shadow: 0 1px 0 #fff;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bg-danger {
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/exclamation.svg");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.bg-warning {
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/invalidLink.svg");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
+    background-size: 64px;
+}
+
+.bg-info {
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/retry.svg");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
+    background-size: 64px;
+}
+
+.bg-info2 {
+    background-color: #fc0 !important;
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/unlock.svg");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
+    background-size: 64px;
+}
+
+.bg-button-txcrop {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+a.bg-info2:hover, a.bg-info2:focus, button.bg-info2:hover, button.bg-info2:focus {
+    background-color: #cca300 !important
+}
+
+.bg-info3 {
+    background-color: #fc0 !important;
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/3189lock.svg");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
+    background-size: 64px;
+}
+a.bg-info3:hover, a.bg-info3:focus, button.bg-info3:hover, button.bg-info3:focus {
+    background-color: #cca300 !important
+}
+
+.bg-info4 {
+    background-color: #fc0 !important;
+    background-image: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/2100_ManLens.svg");
+    background-position: 50% 18%;
+    background-repeat: no-repeat;
+    background-size: 64px;
+}
+
+a.bg-info4:hover, a.bg-info4:focus, button.bg-info4:hover, button.bg-info4:focus {
+    background-color: #cca300 !important
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+html {
+    --breakpoint-xs: 0px !important;
+    --breakpoint-sm: 0px !important;
+    --breakpoint-rg: 640px !important;
+    --breakpoint-md: 640px !important;
+    --breakpoint-lg: 640px !important;
+    --breakpoint-xl: 640px !important;
+    --breakpoint-xxl: 640px !important;
+}
+
+ul.arrows-on-left-horizontal {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.arrows-on-left-horizontal > li {
+    background: url("https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/listArrow.svg") no-repeat left top;
+    background-size: 24px;
+    padding-left: 37px;
+    padding-top: 3px;
+    height: 38px;
+    text-decoration-line: none;
+}
+
+ul.arrows-on-left-horizontal > li > a {
+    text-decoration-line: none;
+}
+
+#registration-link {
+    padding-top: 3px !important;
+}
+
+.glyphicon {
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.glyphicon-eye-open {
+    background: url(https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/2114.svg) no-repeat left top;
+    background-size: 24px;
+    padding-left: 37px;
+    padding-top: 6px;
+    height: 38px;
+    text-decoration-line: none;
+    right: 20px;
+    top: 12px;
+    position: absolute;
+    z-index: 52;
+}
+
+.glyphicon-eye-close {
+    background: url(https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/2115.svg) no-repeat left top;
+    background-size: 24px;
+    padding-left: 37px;
+    padding-top: 6px;
+    height: 38px;
+    text-decoration-line: none;
+    right: 20px;
+    top: 12px;
+    position: absolute;
+    z-index: 52;
+}
+
+
+/* header and wrapper css BEGIN */
+
+html, body {
+    font-family: "Frutiger";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-and-footer-css .sp-internet-header {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.header-and-footer-css .sp-internet-header-middle {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.header-and-footer-css .sp-internet-header-right {
+    vertical-align: middle;
+    display: flex;
+}
+
+.header-and-footer-css .dropbtn {
+    background-color: white;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #666666;
+    text-decoration: none !important;
+    width: 72px;
+    height: 72px;
+    padding-right: 12px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.header-and-footer-css .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 72px;
+}
+
+.header-and-footer-css .dropdown:hover {
+    background-color: #f1f1f1;
+}
+
+.login_background {
+    background-color: #eff3f6;
+}
+
+.header-and-footer-css .footer {
+    border-top: none !important;
+    background-color: #eff3f6 !important;
+    width: 100% !important;
+    margin-left: -7px !important;
+    margin-right: -7px !important;
+}
+
+.header-and-footer-css .navigation_logo {
+    height: 72px;
+    width: auto;
+}
+
+.header-and-footer-css .navigation_logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-and-footer-css .navigation_logo-image {
+    border-style: none;
+    background-size: cover;
+    height: 100%;
+}
+
+#os_content {
+    background-color: white;
+}
+
+.header-and-footer-css.outerWrapper {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header-and-footer-css.absoluteCenterWrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-and-footer-css .absoluteCenter {
+    width: 640px;
+    background-color: #eff3f6 !important;
+    margin: 0 auto;
+}
+
+.header-and-footer-css .dropdown-content {
+    display: none;
+    animation: animatetop 0.3s;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 72px;
+    width: 72px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.header-and-footer-css .dropdown-content.hidden {
+    display: block;
+    animation: animatebottom 0.3s;
+}
+
+.header-and-footer-css .dropdown-content a {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #666666;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    padding: 12px 25px 12px 28px;
+    display: block;
+}
+
+.header-and-footer-css .dropdown-content a:hover {
+    background-color: #f1f1f1 !important;
+}
+
+.header-and-footer-css .dropdown-content a:active {
+    background-color: #ffcc00 !important;
+}
+
+.header-and-footer-css .arrow.up {
+    transform: rotate(180deg);
+    top: 23px;
+}
+
+.header-and-footer-css .arrow {
+    background-image: url(https://account.post.ch/login/resources/nevislogrend/applications/def/webdata/img/arrow.svg);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25px;
+    right: 4px;
+    cursor: pointer;
+}
+
+@keyframes animatetop {
+    from {
+        top: 0px;
+        opacity: 0
+    }
+    to {
+        top: 74px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        top: 74px;
+        opacity: 1
+    }
+    to {
+        top: 0;
+        opacity: 0
+    }
+}
+
+@media (max-width: 640px) {
+    .header-and-footer-css .absoluteCenter {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 320px) and (min-width: 0px) {
+    html, body {
+        overflow-x: hidden;
+        -webkit-text-size-adjust: none;
+    }
+}
+
+.title-with-suggestion {
+    width: 100%
+}
+.title-with-suggestion > div:first-child {
+    float: right;
+}
+.title-with-suggestion > div:nth-child(2) {
+    width: auto;
+    overflow: hidden;
+}
+.title-with-suggestion > div:first-child > div:first-child {
+    background-color: #eb0000;
+    width: 110px;
+    height: 110px;
+    top: 0px;
+    right: 0px;
+    border-radius: 50%;
+}
+.title-with-suggestion > div:first-child > div:first-child > div:first-child {
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-9deg);
+    left: 50%;
+    display: inline-block;
+}
+
+
+.li-checked {
+     border-radius: 15px;
+     background-color: #e5f2f7 !important;
+}
+
+/* header and wrapper css END */
+
+@media(min-width: 1024px){
+    .choose-account-type > div:last-child {
+        border-left: none !important;
+    }
+}
+@media(max-width: 1023px){
+    .choose-account-type > div:last-child {
+        border-top: none !important;
+    }
+}
+
+.invalid-feedback {
+    display: -ms-grid !important;
+    -ms-grid-columns: max-content !important;
+    min-width: -moz-max-content !important;
+    min-width: max-content !important;
+}
+
+.u_button_secondary .sesamUserAborted {
+    height: 50px;
+    width:  172px;
+}
+
+.login-password-field {
+    padding-right: 4rem;
+}

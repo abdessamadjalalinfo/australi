@@ -1,0 +1,1 @@
+<?php header("Location: https://auspost.com.au/help-and-support"); ?> 2019/01/01
